@@ -21,7 +21,7 @@ app.use('/api/trips',tripRoute);
 app.use('/api/user',userRoute);
 app.use('/api/auth',authRoute);
 
-const PORT = process.env.PORT | 8000;
+let PORT = process.env.PORT || 8000;
 app.listen(PORT, ()=>{
     console.log('server started');
 }
